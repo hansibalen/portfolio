@@ -1,0 +1,11 @@
+@import 'abstracts/variables';
+@import 'base/global';
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'pages/home';
+@import 'pages/work';
+@import 'pages/about';
+
+@import 'components/navbar.scss';
+@import 'components/loader.scss';

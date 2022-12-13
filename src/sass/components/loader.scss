@@ -1,0 +1,24 @@
+.preloader,
+.inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.preloader {
+  width: 100vw;
+  height: 100vh;
+  background: $dark;
+  z-index: 10000;
+}
+.inner {
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 300;
+  color: $background;
+}

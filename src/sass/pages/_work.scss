@@ -1,0 +1,89 @@
+.work-section,
+.work-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.work-section {
+  margin-top: 4rem;
+  @media (max-width: $layout-breakpoint-xsmall) {
+    margin-top: 1rem;
+  }
+  .line {
+    height: 3px;
+    width: 100%;
+    background: $black;
+    @media (max-width: $layout-breakpoint-xsmall) {
+      height: 2px;
+    }
+  }
+  .work-text {
+    overflow: hidden;
+    gap: 2rem;
+    @media (max-width: $layout-breakpoint-xsmall) {
+      gap: 1rem;
+    }
+    h2 {
+      padding-bottom: 1rem;
+    }
+  }
+  // Projects list
+  ul {
+    padding: 3vh 0;
+    width: 100%;
+    a {
+      text-decoration: none;
+      color: $black;
+      cursor: pointer;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+    h3 {
+      font-size: 2.5vw;
+      font-weight: 500;
+      width: 15vw;
+    }
+    h4 {
+      opacity: 0;
+      visibility: hidden;
+      font-size: 1.3vw;
+      justify-content: flex-start;
+      width: 30vw;
+      transition: 0.4s;
+      font-weight: 400;
+    }
+    li {
+      border-top: 1px solid $black;
+      padding: 1vh 0;
+      background: inherit;
+      transition: 0.4s;
+    }
+    li:last-child {
+      border-bottom: 1px solid $black;
+    }
+    li:hover {
+      background: $projecthover;
+      .arrow {
+        opacity: 100%;
+      }
+      h4 {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    .arrow {
+      opacity: 0%;
+      transition: 0.3s;
+      margin-right: 0.1rem;
+    }
+    @media (max-width: $layout-breakpoint-medium) {
+      h4 {
+        display: none;
+      }
+      h3 {
+        font-size: 7.5vw;
+      }
+    }
+  }
+}

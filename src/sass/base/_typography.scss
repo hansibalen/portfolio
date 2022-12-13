@@ -1,0 +1,37 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400,300&display=swap');
+
+html {
+  font-size: 62.5%;
+  line-height: 1.25;
+  body {
+    font-family: 'Satoshi', sans-serif;
+  }
+}
+
+a {
+  font-weight: 600;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: 7vw;
+  @media (max-width: $layout-breakpoint-small) {
+    font-size: 12vw;
+  }
+}
+
+h2 {
+  margin-top: 4rem;
+  font-size: 4vw;
+  font-weight: 500;
+  @media (max-width: $layout-breakpoint-small) {
+    font-size: 7vw;
+    margin-top: 2rem;
+  }
+  @media (max-width: $layout-breakpoint-xsmall) {
+    font-size: 8vw;
+  }
+}
