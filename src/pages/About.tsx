@@ -48,7 +48,8 @@ const About = (): React.ReactElement => {
             I&apos;m a software developer from Albania, whose expertise lies in
             front-end development and generative coding. Building user-friendly,
             scalable & interactive web products with distinctive UI/UX. Always
-            researching for robust solutions to apply in this dynamic industry.
+            researching for robust solutions to apply to technology daily
+            challenges.
           </motion.p>
         </motion.div>
         <motion.div
