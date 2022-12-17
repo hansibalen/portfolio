@@ -46,10 +46,10 @@ const About = (): React.ReactElement => {
           <motion.h2 variants={descriptionTitle}>Who am I?</motion.h2>
           <motion.p variants={descriptionContent}>
             I&apos;m a software developer from Albania, whose expertise lies in
-            front-end development and generative coding. Building user-friendly,
-            scalable & interactive web products with distinctive UI/UX. Always
-            researching for robust solutions to apply to technology daily
-            challenges.
+            front-end development, design and generative coding. Building
+            user-friendly, scalable & interactive web products with distinctive
+            UI/UX. Always learning new methodologies and researching robust
+            solutions to apply to business and technology daily challenges.
           </motion.p>
         </motion.div>
         <motion.div

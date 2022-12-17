@@ -35,7 +35,7 @@ const Projects = (): React.ReactElement => {
         animate='show'
       >
         <motion.h2 variants={descriptionTitle}>
-          A collection of projects, past and present.
+          A collection of projects I&apos;ve worked on.
         </motion.h2>
       </motion.div>
       <ul>
