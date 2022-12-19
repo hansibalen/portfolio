@@ -105,14 +105,14 @@ nav {
       min-height: 100%;
       display: flex;
       text-align: center;
-      justify-content: center;
       position: fixed;
       bottom: 0;
       right: 0;
       list-style: none;
       ul {
         display: flex;
-        gap: 10vw;
+        width: 100%;
+        justify-content: space-between;
         flex-direction: row;
         align-self: center;
         li {
@@ -120,10 +120,13 @@ nav {
         }
         @media (max-width: $layout-breakpoint-medium) {
           flex-direction: column;
+          gap: 10vw;
+          width: auto;
         }
       }
       @media (max-width: $layout-breakpoint-medium) {
         font-size: 8rem;
+        justify-content: center;
       }
       @media (max-width: $layout-breakpoint-xsmall) {
         justify-content: flex-start;
