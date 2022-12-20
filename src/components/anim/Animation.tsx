@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { motion } from 'framer-motion';
 
 // Section
@@ -7,7 +6,7 @@ export const IntroAnimation = ({
   children,
   className,
 }: {
-  children: any;
+  children: ReactNode;
   className: string;
 }) => (
   <motion.section
@@ -29,7 +28,7 @@ export const LoaderAnimation = ({
   children,
   className,
 }: {
-  children: any;
+  children: ReactNode;
   className: string;
 }) => (
   <motion.section
