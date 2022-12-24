@@ -30,10 +30,13 @@
       font-size: 1.2vw;
       line-height: 1.8vw;
       @media (max-width: $layout-breakpoint-large) {
+        width: 80%;
         font-size: 1.6rem;
         line-height: 2.4rem;
-        width: 100%;
         hyphens: auto;
+      }
+      @media (max-width: $layout-breakpoint-medium) {
+        width: 100%;
       }
     }
     & .contact {
