@@ -5,7 +5,7 @@ import { slide } from '../anim/AnimationValues';
 import { TabTitle } from '../../../utils/GeneralFunctions';
 
 const Loader = (): React.ReactElement => {
-  TabTitle('Hansi Brahimasi | Loading');
+  TabTitle('Hansi Brahimasi | Development');
 
   return (
     <>
