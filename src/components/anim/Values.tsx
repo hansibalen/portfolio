@@ -2,7 +2,7 @@
 export const opacity = {
   hidden: {
     opacity: 0,
-    zIndex: '-100',
+    zIndex: -10,
   },
   show: {
     opacity: 1,
