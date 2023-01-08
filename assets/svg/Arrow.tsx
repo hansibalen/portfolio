@@ -4,10 +4,12 @@ const Arrow = ({
   width,
   height,
   className,
+  fill,
 }: {
   width: string;
   height: string;
   className: string;
+  fill: string;
 }) => {
   return (
     <svg
@@ -15,6 +17,7 @@ const Arrow = ({
       width={width}
       height={height}
       className={className}
+      fill={fill}
       viewBox='0 0 24 24'
     >
       <polygon points='7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7' />

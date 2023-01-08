@@ -1,3 +1,3 @@
-# Personal portfolio website
+# Portfolio website
 
-![Site logo](https://i.imgur.com/TZukiyt.jpg)
+<img src="https://i.imgur.com/f88E2m8.jpg" width="500">

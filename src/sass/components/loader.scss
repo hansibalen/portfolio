@@ -1,24 +1,30 @@
-.preloader,
-.inner {
+.inner,
+.preloader {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
+  z-index: 1000000;
 }
 .preloader {
   width: 100vw;
   height: 100vh;
-  background: $dark;
-  z-index: 10000;
+  background: $background;
+  h1 {
+    font-weight: 400;
+  }
 }
 .inner {
-  width: 4em;
+  overflow: hidden;
+  padding: 1rem 3rem !important;
   height: 4em;
   line-height: 4em;
+  font-size: 5vw;
   text-align: center;
-  font-size: 3em;
-  font-weight: 300;
-  color: $background;
+  color: $fontColor;
+  @media (max-width: $layout-breakpoint-medium) {
+    font-size: 8vw;
+  }
 }

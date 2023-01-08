@@ -5,65 +5,150 @@
 }
 
 body {
-  background-color: $background;
   overflow-x: hidden;
+  overflow-y: auto;
   -webkit-tap-highlight-color: transparent;
+  padding: 1rem 3rem !important;
+  width: 100%;
+  background: $background;
+  color: $fontColor;
+  @media (max-width: $layout-breakpoint-small) {
+    padding: 1rem !important;
+  }
 }
 
 section {
-  color: $black;
-  padding: 0 10.8rem !important;
+  width: 100%;
+  min-height: calc(100vh - 4rem);
   @media (max-width: $layout-breakpoint-medium) {
-    padding: 0 7.2rem !important;
-  }
-  @media (max-width: $layout-breakpoint-small) {
-    padding: 0 3rem !important;
-  }
-  @media (max-width: $layout-breakpoint-xsmall) {
-    padding: 0 1.2rem !important;
+    min-height: calc(100vh - 2rem);
   }
 }
 
 ::-moz-selection {
-  background: $black;
+  background: $fontColor;
   color: $background;
 }
 
 ::selection {
-  background: $black;
+  background: $fontColor;
   color: $background;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  width: 1.2em;
 }
 
-// 404
-.not-found {
+::-webkit-scrollbar-track {
+  background-color: $background;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $scrollbar;
+  border-radius: 1rem;
+  border: 0.3rem solid $background;
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $fontColor;
+}
+
+// Common classes
+.hr {
   width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
+  border-bottom: 1px solid $fontColor;
+}
+
+.white-space {
+  width: 100%;
+  height: 12rem;
+  @media (max-width: $layout-breakpoint-medium) {
+    display: none;
+  }
+  @media (max-width: $layout-breakpoint-medium) and (max-height: $layout-breakpoint-xsmall) {
+    display: block;
+    height: 8rem;
+  }
+}
+
+.col {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  gap: 5rem;
+  justify-content: space-around;
+  @media (max-width: $layout-breakpoint-medium) and (max-height: $layout-breakpoint-xsmall) {
+    gap: 2rem;
+  }
+}
+
+.mobile {
+  @media (max-width: $layout-breakpoint-xsmall) {
+    padding-top: 6vw;
+    justify-content: normal;
+  }
+}
+
+.header {
+  gap: 2rem;
   h1 {
-    font-size: 5vw;
+    font-size: 4vw;
+    @media (max-width: $layout-breakpoint-medium) {
+      font-size: 8vw;
+    }
   }
   p {
-    font-size: 2vw;
-    text-align: left;
+    font-size: 2.5vw;
+    @media (max-width: $layout-breakpoint-medium) {
+      font-size: 4vw;
+    }
+    @media (max-width: $layout-breakpoint-xsmall) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.description {
+  font-size: 1.2vw;
+  line-height: 1.8vw;
+  @media (max-width: $layout-breakpoint-large) {
+    font-size: 1.6vw;
+    line-height: 2.6vw;
+    width: 80%;
+  }
+  @media (max-width: $layout-breakpoint-medium) {
+    font-size: 1.98vw;
+    line-height: 2.98vw;
+    width: 100%;
   }
   @media (max-width: $layout-breakpoint-small) {
-    gap: 3rem;
-    h1 {
-      font-size: 10vw;
-    }
-    p {
-      font-size: 5vw;
-    }
+    font-size: 1.6rem;
+    line-height: 2.5rem;
   }
+  @media (max-width: $layout-breakpoint-xsmall) {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+}
+
+.intro {
+  padding: 0.5em 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  span {
+    font-variant-numeric: tabular-nums;
+  }
+  @media (min-width: 2000px) {
+    font-size: 0.9vw;
+  }
+  @media (max-width: $layout-breakpoint-xsmall) {
+    font-size: 0.9rem;
+  }
+}
+
+.disable-selection {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

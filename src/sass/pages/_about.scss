@@ -1,72 +1,47 @@
-.about-section,
-.about-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.about-section {
-  margin-top: 4rem;
-  align-items: flex-start;
+.about-container {
   @media (max-width: $layout-breakpoint-xsmall) {
-    margin-top: 1rem;
+    gap: 25vw;
   }
-  .line {
-    height: 3px;
-    width: 100%;
-    background: $black;
-    @media (max-width: $layout-breakpoint-xsmall) {
-      height: 2px;
+
+  .about-me {
+    width: 60%;
+    @media (max-width: $layout-breakpoint-large) {
+      width: 80%;
     }
-  }
-  .about-text {
-    overflow: hidden;
-    gap: 2rem;
-    @media (max-width: $layout-breakpoint-xsmall) {
-      gap: 1rem;
-    }
-    p {
-      width: 70%;
-      padding-bottom: 1rem;
-      font-size: 1.2vw;
-      line-height: 1.8vw;
-      @media (max-width: $layout-breakpoint-large) {
-        width: 80%;
-        font-size: 1.6rem;
-        line-height: 2.4rem;
-        hyphens: auto;
-      }
-      @media (max-width: $layout-breakpoint-medium) {
-        width: 100%;
-      }
-    }
-    & .contact {
+    @media (max-width: $layout-breakpoint-medium) {
       width: 100%;
     }
   }
-  ul {
-    margin: 2rem 0;
+
+  .exp-list {
+    width: 50%;
+    align-self: flex-end;
+    gap: 4rem;
+    @media (max-width: $layout-breakpoint-medium) {
+      width: 100%;
+    }
+  }
+
+  .exp-row {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 5rem;
+    justify-content: space-between;
+    h2 {
+      font-size: 2.5vw;
+      padding-bottom: 0.1rem;
+      width: 10vw;
+      text-align: right;
+      @media (max-width: $layout-breakpoint-medium) {
+        font-size: 4vw;
+        width: 18vw;
+      }
+      @media (max-width: $layout-breakpoint-small) {
+        font-size: 5vw;
+        width: 20vw;
+      }
+    }
+    :first-child {
+      text-align: left;
+    }
   }
-}
-.contact-link {
-  font-size: 1.2vw;
-  font-weight: 500;
-  text-decoration: none;
-  color: $black;
-  padding: 3px;
-  background-image: linear-gradient($black 0 0);
-  background-position: 100% 100%;
-  background-size: 100% 2px;
-  background-repeat: no-repeat;
-  transition: background-size 0.3s, background-position 0s 0.3s;
-  @media (max-width: $layout-breakpoint-large) {
-    font-size: 1.6rem;
-  }
-}
-.contact-link:hover {
-  background-size: 100% 100%;
-  color: $background;
 }

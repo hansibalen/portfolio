@@ -1,87 +1,68 @@
-.work-section,
-.work-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.work-section {
-  margin-top: 4rem;
+.work-container {
   @media (max-width: $layout-breakpoint-xsmall) {
-    margin-top: 1rem;
+    gap: 30vw;
   }
-  .line {
-    height: 3px;
+
+  ul {
     width: 100%;
-    background: $black;
-    @media (max-width: $layout-breakpoint-xsmall) {
-      height: 2px;
-    }
-  }
-  .work-text {
-    overflow: hidden;
     gap: 2rem;
-    @media (max-width: $layout-breakpoint-xsmall) {
-      gap: 1rem;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: $background;
     }
     h2 {
-      padding-bottom: 1rem;
-    }
-  }
-  // Projects list
-  ul {
-    padding: 3vh 0;
-    width: 100%;
-    a {
-      text-decoration: none;
-      color: $black;
-      cursor: pointer;
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-    }
-    h3 {
       font-size: 2.5vw;
       font-weight: 500;
       width: 15vw;
     }
-    h4 {
+    h3 {
+      font-size: 1.3vw;
+      font-weight: 400;
+      width: 30vw;
+      justify-content: flex-start;
       opacity: 0;
       visibility: hidden;
-      font-size: 1.3vw;
-      justify-content: flex-start;
-      width: 30vw;
       transition: 0.4s;
-      font-weight: 400;
     }
     li {
-      border-top: 1px solid $black;
-      padding: 1vh 0;
-      background: inherit;
+      padding: 1vh;
       transition: 0.4s;
+      border-radius: 2.5rem 0 2.5rem 0;
+      background-color: $fontColor;
+      @media (max-width: $layout-breakpoint-medium) and (max-height: $layout-breakpoint-xsmall) {
+        padding-left: 1rem;
+      }
     }
-    li:last-child {
-      border-bottom: 1px solid $black;
-    }
+
     li:hover {
-      background: $projecthover;
       .arrow {
         opacity: 100%;
       }
-      h4 {
+      h3 {
         visibility: visible;
         opacity: 1;
       }
     }
     .arrow {
       opacity: 0%;
-      transition: 0.3s;
+      transition: 0.4s;
       margin-right: 0.1rem;
     }
-    @media (max-width: $layout-breakpoint-medium) {
-      h4 {
-        display: none;
+    @media (max-width: $layout-breakpoint-small) {
+      h2 {
+        font-size: 5vw;
       }
       h3 {
+        display: none;
+      }
+      .arrow {
+        opacity: 100%;
+      }
+    }
+    @media (max-width: $layout-breakpoint-xsmall) {
+      h2 {
         font-size: 7.5vw;
       }
     }

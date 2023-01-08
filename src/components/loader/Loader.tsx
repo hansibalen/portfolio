@@ -1,26 +1,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { LoaderAnimation } from '../anim/Animation';
-import { slide } from '../anim/AnimationValues';
-import { TabTitle } from '../../../utils/GeneralFunctions';
+import { opacity, load } from '../anim/Values';
 
 const Loader = (): React.ReactElement => {
-  TabTitle('Hansi Brahimasi | Development');
-
   return (
     <>
-      <LoaderAnimation className='preloader'>
-        <motion.div
-          variants={slide}
-          initial='hidden'
-          animate='show'
-          exit='hidden'
-          transition={{ duration: 0.3, delay: 0.1 }}
-          className='inner'
-        >
-          Patience.
-        </motion.div>
-      </LoaderAnimation>
+      <div className='preloader disable-selection'>
+        <div className='inner'>
+          <motion.h1
+            variants={opacity}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            transition={load}
+          >
+            Patience
+          </motion.h1>
+        </div>
+      </div>
     </>
   );
 };
