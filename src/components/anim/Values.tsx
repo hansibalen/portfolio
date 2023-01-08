@@ -6,7 +6,7 @@ export const opacity = {
   },
   show: {
     opacity: 1,
-    zIndex: 1,
+    transitionEnd: { zIndex: 1 },
   },
 };
 
