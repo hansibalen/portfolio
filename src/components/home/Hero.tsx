@@ -25,7 +25,7 @@ const Main = () => {
         animate='show'
         className='row'
       >
-        <div className='intro'>available 03.2023</div>
+        <div className='intro'>available 02.2023</div>
         <div className='intro'>
           <Clock />
         </div>
