@@ -64,7 +64,7 @@ export const workArr = [
     name: 'Vivo',
     link: 'https://www.tibo.al/',
     role: 'Web Developer',
-    tech: 'SASS | jQuery | TypeScript | React | ',
+    tech: 'SASS | jQuery | TypeScript | React',
   },
 ];
 
