@@ -60,6 +60,7 @@ const CTA = () => {
             initial='hidden'
             animate='show'
             className='row subtitle'
+            id={link.id}
           >
             <Title transition={ctaTitle}>{link.titlePartOne}</Title>
             <Title transition={ctaTitle}>{link.titlePartTwo}</Title>

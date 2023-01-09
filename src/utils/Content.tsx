@@ -24,8 +24,8 @@ export const navArray = [
 ];
 
 export const heroArray = [
-  { titlePartOne: 'Software', titlePartTwo: 'Developer' },
-  { titlePartOne: 'Generative', titlePartTwo: 'Artist' },
+  { titlePartOne: 'Software', titlePartTwo: 'Developer', id: 'subtitleOne' },
+  { titlePartOne: 'Generative', titlePartTwo: 'Artist', id: 'subtitleTwo' },
 ];
 
 // Work
